@@ -1,0 +1,86 @@
+/* Change the styles below in order to customize your template */
+
+body{font-family: Helvetica, Arial; font-weight: regular; font-size: 15px; color: #CBCBCB; background-color: #333; margin: 0;}
+
+.map{background-color:#eee; position: absolute; top: 0; left: 0; bottom: 40px; width: 100%; *height:100%; }
+
+.close { position:absolute; display: block; width: 28px; height: 28px; margin-bottom: 20px; background: #fff; color: #333; font-weight: bold; border: none; font-size: 16px; line-height: 24px; vertical-align: middle; right: 16px; top: 16px; border-radius: 14px;}
+
+.gear { cursor: pointer; z-index: 11;}
+
+.settings { 
+	display: none; position: absolute; left: -1000px; width: 440px;  background: #333;
+	top: 50%; height: 280px; margin-top: -160px; 
+}
+/*.settings .close { right: 0; top: 8px; }*/
+.settings.show { 
+	display: block; 
+	left: 50%; margin-left: -220px;
+}
+.settings p, .settings h3, .settings h4{ padding: 8px 8px 0 8px;}
+.settings h4{ font-weight: bold; font-size: 12px; color: #777; text-transform: uppercase; margin: 18px 0 10px 0; line-height: 14px; }
+.settings ul { list-style: none; margin: 0 0 8px 0; padding: 8px; height: auto; background: #444; height: 106px;}
+.settings ul li { float: left; margin: 8px;}
+.settings ul li img{ float: left; padding: 0; margin: 0; cursor: pointer; height: 90px;}
+
+.legend { margin: 0 0 10px 50px; text-align: center; color: white;}
+.legend ul { list-style: none; width: 100%; vertical-align: middle;}
+.legend ul li { cursor: pointer;}
+.legend ul li { float: left; margin: 10px; padding: 6px 12px 4px 4px;
+	background: #666; background: rgba(111,111,111, 0.7);
+	border-radius: 3px; -moz-border-radius: 3px;
+	text-transform: uppercase;
+}
+.legend ul li .dot{ float: left; margin: 4px 8px; background: white; width: 10px; height: 10px; border-radius: 6px; -moz-border-radius: 6px;}  
+.legend ul li.active{ background: rgba(133,111,199, 0.9); }  
+
+
+
+.timeslider{background-color:#333; position: absolute; height: 40px; left: 0; bottom: 0; width: 100%; z-index: 22;}
+.timeslider p { padding: 5px 5%; width: 90%;}
+.timeslider p input[type='range'] {
+                -webkit-appearance: none !important;
+                -webkit-border-radius: 2px;
+                -webkit-box-shadow: inset 0 0 5px #333;
+                background-color: #999;
+                display: block;
+                height: 2px;
+				width: 100%;
+				margin: 0;
+            }
+.timeslider p input[type='range']::-webkit-slider-thumb {
+                -webkit-appearance: none !important;
+                -webkit-border-radius: 1px;
+                background-color: #AAA;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#AAA));
+                border: 1px solid #999;
+                height: 24px;
+                width: 80px;
+            }
+
+
+.context{font-family: Helvetica, Arial; font-size: 13px; color: #999; padding: 10px 0 0 0;}
+.sidepanel{background-color:#333; position: absolute; top: 0; right: 0; bottom: 0; width: 44%; height: 100%; overflow: auto; display: none; z-index: 111; border-left: 4px solid rgba(255,255,255, 0.05);}
+
+.subheader{position: relative; }
+
+.subheader h1{font-weight: bold; font-size: 26px; letter-spacing: -1px; color: #FFF; margin: 0 0 12px 0 ; padding: 0; line-height: 24px; }
+.subheader p {font-size: 15px; line-height: 18px; text-align: left; padding: 0; margin: 4px 0; color: #FFF;}
+.subheader p .category {font-weight: bold; font-size: 12px; color: #777; text-transform: uppercase;  padding: 0 5px 0 0; margin: 0; line-height: 12px; text-align: right;display: inline-block;
+    *display: inline;/* for IE7*/
+    *zoom:1;/* for IE7*/
+	width: 80px;}
+.subheader p .tags {font-weight: bold; font-size: 12px; color: #fff; text-transform: uppercase;  padding: 0 3px 0 0; margin: 0; line-height: 12px; text-align: left;display: inline-block;}
+
+.media p {position: relative; width: 100%; padding: 10px;}
+.media p img {width: 470px;}
+
+.content p {font-size: 15px; line-height: 20px; text-align: left; padding: 0; margin: 4px 0; color: #bbb;}
+
+
+.wrapper{display: block; padding: 4px 30px 0 30px;}
+.wrapper h3{font-weight: bold; font-size: 12px; color: #777; text-transform: uppercase; margin: 18px 0 0 0;}
+
+p.source{text-align: right;}
+a, a:visited{color: #72B6E5; text-decoration: none;}
+a:hover{text-decoration: underline;}

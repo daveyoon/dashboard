@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--Edit the title of the page-->
+    <title>Your page title goes here</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.ie.css" />
+    <![endif]-->
+    <!--Switch between the different themes changing the stylesheet below - light-theme.css |dark-theme.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/timby-theme.css">
+    <link rel="stylesheet" href="css/makeitresponsive.css">
+  </head>
+  <body>
+
+
+
+    <div class="map" id="map"></div>
+    <div class="timeslider" id="timeslider">
+      <p><input id="test" type="range" value="4" min="1" max="36" step="1"/></p>
+    </div>
+
+
+
+
+    <div class="sidepanel">
+      <button class="close">x</button>
+      <div class="wrapper">
+        <div class="context subheader">
+          <h1 class="title">Latest forest action</h1>
+          <p><span class="category">date</span> Jul 20th, 2013</p>
+          <p><span class="category">companies</span> Forest Ventures </p>
+          <p><span class="category">people</span> John Gbedzy </p>
+          <p><span class="category">tags</span>
+            <span class="tags">mining, forestry, destruction, pup</span>
+          </p>
+        </div>
+
+        <h3>multimedia</h3>
+        <div class="context media">
+          <p id="image-view"><img  src="img/mockup/media1.jpg" /></p>
+        </div>
+
+        <h3>description</h3>
+        <div class="context content">
+          <p>Ullamco veniam Marfa freegan post-ironic exercitation. Typewriter pop-up narwhal dolor. Stumptown ethnic church-key ex elit selfies. Forage tousled vero blue bottle. Mollit culpa freegan, dolore helvetica viral VHS pork belly. Vice cillum pop-up do, non shabby chic church-key Odd Future eiusmod. Chambray consequat artisan before they sold out, pickled PBR deep v mollit butcher.</p>
+          <p>Craft beer brunch keffiyeh, sed flannel whatever anim VHS intelligentsia post-ironic. Mollit stumptown delectus, qui iPhone craft beer pitchfork tote bag next level post-ironic ex bitters kale chips. Delectus hoodie Austin twee voluptate, mustache skateboard pour-over elit before they sold out chambray viral Odd Future forage letterpress. Mustache quinoa before they sold out, Pinterest nostrud Marfa farm-to-table. Schlitz Vice Wes Anderson flexitarian. Squid small batch intelligentsia Odd Future, stumptown shabby chic tumblr sint blog reprehenderit food truck helvetica ugh occupy. Hella McSweeney's Carles leggings craft beer, bespoke ethical Terry Richardson blue bottle.</p>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/x-mustache-template" id="settings-template">
+    <div class="settings">
+      <button class="close">x</button>
+      <h3>Settings</h3>
+      <h4 class="title"> Basemap selection </h4>
+      <ul class="basemap-selector" >
+        <li class="basemap" id="toner"><img src="img/basemap-stamen-toner.png" /></li>
+        <li class="basemap" id="terrain"><img src="img/basemap-nokia-terrain.png" /></li>
+        <li class="basemap" id="forest"><img src="img/basemap-thunderforest.png" /></li>
+        <li class="basemap" id="normal"><img src="img/basemap-nokia-normal.png" /></li>
+      </ul>
+      <p class="attributions">
+        <i>basemap credits</i>
+      </p>
+    </div>
+    </script>
+
+    <script type="text/x-mustache-template" id="legend-template">
+    <div class="legend">
+      <ul class="legend-items">
+        {{#items}}
+        <li class="item" id="{{id}}"><div class="dot" style="background: {{color}};"></div>{{item}}</li>
+        {{/items}}
+      </ul>
+    </div>
+    </script>
+
+    <script type="text/x-mustache-template" id="gear-template">
+      <div class="gear">
+        <img src="img/settings-gear.png" />
+      </div>
+    </script>
+
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+      window.onload = App;
+    </script>
+  </body>
+      </html>
